@@ -50,18 +50,18 @@ jobs:
           username: ${{ github.repository_owner }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Install Cosign
-        uses: sigstore/cosign-installer@main
-        with:
-          cosign-release: 'v1.12.0'
-      - name: Check cosign install!
-        run: cosign version
+      # - name: Install Cosign
+      #   uses: sigstore/cosign-installer@main
+      #   with:
+      #     cosign-release: 'v1.12.0'
+      # - name: Check cosign install!
+      #   run: cosign version
 
-      - name: Write cosign signing key to disk
-        run: 'echo "$KEY" > cosign.key'
-        shell: bash
-        env:
-          KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
+      # - name: Write cosign signing key to disk
+      #   run: 'echo "$KEY" > cosign.key'
+      #   shell: bash
+      #   env:
+      #     KEY: ${{ secrets.COSIGN_PRIVATE_KEY }}
 
       - name: Generate yaml for manifest, Minikube and Openshift installation
         run: ${GITHUB_WORKSPACE}/hack/build-yaml.sh $VERSION
