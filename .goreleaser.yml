@@ -166,7 +166,7 @@ dockers:
       - pre-upgrade-checks
     image_templates:
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-arm64"
-      - "ghcr.io/shubham-bansal96/ission/pre-upgrade-checks:{{ .Tag }}-arm64"
+      - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-arm64"
     dockerfile: cmd/preupgradechecks/Dockerfile
     build_flag_templates:
       - "--label=org.opencontainers.image.source={{.GitURL}}"
