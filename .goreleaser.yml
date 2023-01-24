@@ -82,6 +82,8 @@ dockers:
     ids:
       - builder
     image_templates:
+      - "docker.io/shubham-bansal96/builder:latest-amd64"
+      - "docker.io/shubham-bansal96/builder:{{ .Tag }}-amd64"
       - "ghcr.io/shubham-bansal96/fission/builder:latest-amd64"
       - "ghcr.io/shubham-bansal96/fission/builder:{{ .Tag }}-amd64"
     dockerfile: cmd/builder/Dockerfile
@@ -95,6 +97,8 @@ dockers:
     ids:
       - fetcher
     image_templates:
+      - "docker.io/shubham-bansal96/fetcher:latest-amd64"
+      - "docker.io/shubham-bansal96/fetcher:{{ .Tag }}-amd64"
       - "ghcr.io/shubham-bansal96/fission/fetcher:latest-amd64"
       - "ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}-amd64"
     dockerfile: cmd/fetcher/Dockerfile
@@ -104,6 +108,8 @@ dockers:
     ids:
       - fission-bundle
     image_templates:
+      - "docker.io/shubham-bansal96/fission-bundle:latest-amd64"
+      - "docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}-amd64"
       - "ghcr.io/shubham-bansal96/fission/fission-bundle:latest-amd64"
       - "ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}-amd64"
     dockerfile: cmd/fission-bundle/Dockerfile
@@ -113,6 +119,8 @@ dockers:
     ids:
       - pre-upgrade-checks
     image_templates:
+      - "docker.io/shubham-bansal96/pre-upgrade-checks:latest-amd64"
+      - "docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}-amd64"
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-amd64"
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-amd64"
     dockerfile: cmd/preupgradechecks/Dockerfile
@@ -122,6 +130,8 @@ dockers:
     ids:
       - reporter
     image_templates:
+      - "docker.io/shubham-bansal96/reporter:latest-amd64"
+      - "docker.io/shubham-bansal96/reporter:{{ .Tag }}-amd64"
       - "ghcr.io/shubham-bansal96/fission/reporter:latest-amd64"
       - "ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}-amd64"
     dockerfile: cmd/reporter/Dockerfile
@@ -134,6 +144,8 @@ dockers:
     ids:
       - builder
     image_templates:
+      - "docker.io/shubham-bansal96/builder:latest-arm64"
+      - "docker.io/shubham-bansal96/builder:{{ .Tag }}-arm64"
       - "ghcr.io/shubham-bansal96/fission/builder:latest-arm64"
       - "ghcr.io/shubham-bansal96/fission/builder:{{ .Tag }}-arm64"
     dockerfile: cmd/builder/Dockerfile
@@ -147,6 +159,8 @@ dockers:
     ids:
       - fetcher
     image_templates:
+      - "docker.io/shubham-bansal96/fetcher:latest-arm64"
+      - "docker.io/shubham-bansal96/fetcher:{{ .Tag }}-arm64"
       - "ghcr.io/shubham-bansal96/fission/fetcher:latest-arm64"
       - "ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}-arm64"
     dockerfile: cmd/fetcher/Dockerfile
@@ -156,6 +170,8 @@ dockers:
     ids:
       - fission-bundle
     image_templates:
+      - "docker.io/shubham-bansal96/fission-bundle:latest-arm64"
+      - "docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}-arm64"
       - "ghcr.io/shubham-bansal96/fission/fission-bundle:latest-arm64"
       - "ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}-arm64"
     dockerfile: cmd/fission-bundle/Dockerfile
@@ -165,6 +181,8 @@ dockers:
     ids:
       - pre-upgrade-checks
     image_templates:
+      - "docker.io/shubham-bansal96/pre-upgrade-checks:latest-arm64"
+      - "docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}-arm64"
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-arm64"
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-arm64"
     dockerfile: cmd/preupgradechecks/Dockerfile
@@ -174,6 +192,8 @@ dockers:
     ids:
       - reporter
     image_templates:
+      - "docker.io/shubham-bansal96/reporter:latest-arm64"
+      - "docker.io/shubham-bansal96/reporter:{{ .Tag }}-arm64"
       - "ghcr.io/shubham-bansal96/fission/reporter:latest-arm64"
       - "ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}-arm64"
     dockerfile: cmd/reporter/Dockerfile
@@ -187,6 +207,8 @@ dockers:
     ids:
       - builder
     image_templates:
+      - "docker.io/shubham-bansal96/builder:latest-armv7"
+      - "docker.io/shubham-bansal96/builder:{{ .Tag }}-armv7"
       - "ghcr.io/shubham-bansal96/fission/builder:latest-armv7"
       - "ghcr.io/shubham-bansal96/fission/builder:{{ .Tag }}-armv7"
     dockerfile: cmd/builder/Dockerfile
@@ -200,6 +222,8 @@ dockers:
     ids:
       - fetcher
     image_templates:
+      - "docker.io/shubham-bansal96/fetcher:latest-armv7"
+      - "docker.io/shubham-bansal96/fetcher:{{ .Tag }}-armv7"
       - "ghcr.io/shubham-bansal96/fission/fetcher:latest-armv7"
       - "ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}-armv7"
     dockerfile: cmd/fetcher/Dockerfile
@@ -209,6 +233,8 @@ dockers:
     ids:
       - fission-bundle
     image_templates:
+      - "docker.io/shubham-bansal96/fission-bundle:latest-armv7"
+      - "docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}-armv7"
       - "ghcr.io/shubham-bansal96/fission/fission-bundle:latest-armv7"
       - "ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}-armv7"
     dockerfile: cmd/fission-bundle/Dockerfile
@@ -218,6 +244,8 @@ dockers:
     ids:
       - pre-upgrade-checks
     image_templates:
+      - "docker.io/shubham-bansal96/pre-upgrade-checks:latest-armv7"
+      - "docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}-armv7"
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-armv7"
       - "ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-armv7"
     dockerfile: cmd/preupgradechecks/Dockerfile
@@ -227,6 +255,8 @@ dockers:
     ids:
       - reporter
     image_templates:
+      - "docker.io/shubham-bansal96/reporter:latest-armv7"
+      - "docker.io/shubham-bansal96/reporter:{{ .Tag }}-armv7"
       - "ghcr.io/shubham-bansal96/fission/reporter:latest-armv7"
       - "ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}-armv7"
     dockerfile: cmd/reporter/Dockerfile
@@ -238,51 +268,101 @@ docker_manifests:
       - ghcr.io/shubham-bansal96/fission/builder:{{ .Tag }}-amd64
       - ghcr.io/shubham-bansal96/fission/builder:{{ .Tag }}-arm64
       - ghcr.io/shubham-bansal96/fission/builder:{{ .Tag }}-armv7
+  - name_template: docker.io/shubham-bansal96/builder:{{ .Tag }}
+    image_templates:
+      - docker.io/shubham-bansal96/builder:{{ .Tag }}-amd64
+      - docker.io/shubham-bansal96/builder:{{ .Tag }}-arm64
+      - docker.io/shubham-bansal96/builder:{{ .Tag }}-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}
     image_templates:
       - ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}-amd64
       - ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}-arm64
       - ghcr.io/shubham-bansal96/fission/fetcher:{{ .Tag }}-armv7
+  - name_template: docker.io/shubham-bansal96/fetcher:{{ .Tag }}
+    image_templates:
+      - docker.io/shubham-bansal96/fetcher:{{ .Tag }}-amd64
+      - docker.io/shubham-bansal96/fetcher:{{ .Tag }}-arm64
+      - docker.io/shubham-bansal96/fetcher:{{ .Tag }}-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}
     image_templates:
       - ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}-amd64
       - ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}-arm64
       - ghcr.io/shubham-bansal96/fission/fission-bundle:{{ .Tag }}-armv7
+  - name_template: docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}
+    image_templates:
+      - docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}-amd64
+      - docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}-arm64
+      - docker.io/shubham-bansal96/fission-bundle:{{ .Tag }}-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}
     image_templates:
       - ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-amd64
       - ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-arm64
       - ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:{{ .Tag }}-armv7
+  - name_template: docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}
+    image_templates:
+      - docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}-amd64
+      - docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}-arm64
+      - docker.io/shubham-bansal96/pre-upgrade-checks:{{ .Tag }}-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}
     image_templates:
       - ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}-amd64
       - ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}-arm64
       - ghcr.io/shubham-bansal96/fission/reporter:{{ .Tag }}-armv7
+  - name_template: docker.io/shubham-bansal96/reporter:{{ .Tag }}
+    image_templates:
+      - docker.io/shubham-bansal96/reporter:{{ .Tag }}-amd64
+      - docker.io/shubham-bansal96/reporter:{{ .Tag }}-arm64
+      - docker.io/shubham-bansal96/reporter:{{ .Tag }}-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/builder:latest
     image_templates:
       - ghcr.io/shubham-bansal96/fission/builder:latest-amd64
       - ghcr.io/shubham-bansal96/fission/builder:latest-arm64
       - ghcr.io/shubham-bansal96/fission/builder:latest-armv7
+  - name_template: docker.io/shubham-bansal96/builder:latest
+    image_templates:
+      - docker.io/shubham-bansal96/builder:latest-amd64
+      - docker.io/shubham-bansal96/builder:latest-arm64
+      - docker.io/shubham-bansal96/builder:latest-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/fetcher:latest
     image_templates:
       - ghcr.io/shubham-bansal96/fission/fetcher:latest-amd64
       - ghcr.io/shubham-bansal96/fission/fetcher:latest-arm64
       - ghcr.io/shubham-bansal96/fission/fetcher:latest-armv7
+  - name_template: docker.io/shubham-bansal96/fetcher:latest
+    image_templates:
+      - docker.io/shubham-bansal96/fetcher:latest-amd64
+      - docker.io/shubham-bansal96/fetcher:latest-arm64
+      - docker.io/shubham-bansal96/fetcher:latest-armv7 
   - name_template: ghcr.io/shubham-bansal96/fission/fission-bundle:latest
     image_templates:
       - ghcr.io/shubham-bansal96/fission/fission-bundle:latest-amd64
       - ghcr.io/shubham-bansal96/fission/fission-bundle:latest-arm64
       - ghcr.io/shubham-bansal96/fission/fission-bundle:latest-armv7
+  - name_template: docker.io/shubham-bansal96/fission/fission-bundle:latest
+    image_templates:
+      - docker.io/shubham-bansal96/fission-bundle:latest-amd64
+      - docker.io/shubham-bansal96/fission-bundle:latest-arm64
+      - docker.io/shubham-bansal96/fission-bundle:latest-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest
     image_templates:
       - ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-amd64
       - ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-arm64
       - ghcr.io/shubham-bansal96/fission/pre-upgrade-checks:latest-armv7
+  - name_template: docker.io/shubham-bansal96/pre-upgrade-checks:latest
+    image_templates:
+      - docker.io/shubham-bansal96/pre-upgrade-checks:latest-amd64
+      - docker.io/shubham-bansal96/pre-upgrade-checks:latest-arm64
+      - docker.io/shubham-bansal96/pre-upgrade-checks:latest-armv7
   - name_template: ghcr.io/shubham-bansal96/fission/reporter:latest
     image_templates:
       - ghcr.io/shubham-bansal96/fission/reporter:latest-amd64
       - ghcr.io/shubham-bansal96/fission/reporter:latest-arm64
       - ghcr.io/shubham-bansal96/fission/reporter:latest-armv7
+  - name_template: docker.io/shubham-bansal96/reporter:latest
+    image_templates:
+      - docker.io/shubham-bansal96/reporter:latest-amd64
+      - docker.io/shubham-bansal96/reporter:latest-arm64
+      - docker.io/shubham-bansal96/reporter:latest-armv7
 changelog:
   skip: false
 archives:
