@@ -338,7 +338,7 @@ docker_manifests:
       - ghcr.io/shubham-bansal96/fission/fission-bundle:latest-amd64
       - ghcr.io/shubham-bansal96/fission/fission-bundle:latest-arm64
       - ghcr.io/shubham-bansal96/fission/fission-bundle:latest-armv7
-  - name_template: shubhambansal96/fission/fission-bundle:latest
+  - name_template: shubhambansal96/fission-bundle:latest
     image_templates:
       - shubhambansal96/fission-bundle:latest-amd64
       - shubhambansal96/fission-bundle:latest-arm64
